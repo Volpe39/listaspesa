@@ -1,0 +1,4 @@
+db.productlist.insert({'nome' : 'Deodorante pa', 'note' : 'Quello per le ascelle più potenti', 'utente' : 'Pa', 'data' : '03/03/15 17:46'});
+db.productlist.insert({'nome' : 'Pile mini stilo', 'note' : 'quelle piccole', 'utente' : 'Fraa', 'data' : '25/04/15 10:34'});
+db.productlist.insert({'nome' : 'Deodorante fra', 'note' : 'Quello per le ascelle potenti', 'utente' : 'Fra', 'data' : '03/03/15 17:46'});
+db.productlist.insert({'nome' : 'Pile stilo', 'note' : '', 'utente' : 'Pa', 'data' : '25/04/15 10:34'});

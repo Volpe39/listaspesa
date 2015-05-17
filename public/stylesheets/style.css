@@ -1,0 +1,70 @@
+body {
+
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color:#B3B3B3;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.menuBarClass {
+	font:25px "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-align: center;
+	position: top;
+
+	padding-top: 5;
+	padding-bottom: 5;
+	/*border : 5px solid #323232;		/*TEST COLOR, rimuovere*/
+}
+
+.menuBarClass	li {
+	display: inline;
+	padding:15px;
+	border-right: 3px solid #323232;
+	border-bottom: 3px solid #323232;
+	background-color: #7D7D7D;
+	border-radius: 15px;
+}
+.menuBarClass	a {
+	color: #D6D6D6;
+}
+
+.productTableClass {
+	display: inline-block;
+	background-color: black;
+	border: 1px collapse black;
+	/*width:100%;*/
+	font:15px "Lucida Grande", Helvetica, Arial, sans-serif;
+	
+}
+.productTableClass td{
+	border: 1px collapse black;
+}
+.productTableClass th{
+	background-color: black;
+	color: white;
+	border: 1px collapse black;
+}
+.productTableClass tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+.productTableClass tr:nth-child(odd) {
+	background-color: #CCFFFF;
+}
+
+.formAddProdottoClass {
+	/*border : 5px solid blue;*/
+	float:left;
+	
+	padding-right: 20px;
+	/*width:18%;*/
+} 
+.formAddProdottoClass form{
+	border : 2px solid black;
+}
+.containerZ{
+	
+	height:100%;
+	/*border : 5px solid #323232;*/
+}

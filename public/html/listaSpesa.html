@@ -1,0 +1,17 @@
+<html ng-app="listaSpesa">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-resource.min.js"></script>
+		<script src="./javascripts/global.js"></script>
+		<script src="./javascripts/menuBar.js"></script>
+		<script src="./javascripts/prodTable.js"></script>
+		<link rel="stylesheet" href="./stylesheets/style.css">
+		<title>Lista della spesa</title>
+	</head>
+	<body ng-controller="listaSpesaCtrl as lista">
+		<menu-bar  ng-init="menu.getSession()"></menu-bar>
+		<prod-table ng-init="prTab.refreshTable()"></prod-table>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="containerZ">
+	<div class="formAddProdottoClass">
+		<form name="formAddProdotto" ng-submit="formAddProdotto.$valid && prTab.updORadd()" novalidate>
+			<input ng-model="prTab.newProdotto.nome" style="width:250px" type="text" placeholder="Nome prodotto" name="Prodotto" required></input><br>
+			<textarea ng-model="prTab.newProdotto.note" style="width:250px;height:200px;resize:none;" placeholder="Descrizione prodotto" name="Note" required></textarea><br>
+			<input ng-model="prTab.newProdotto.utente" style="width:250px" type="text" placeholder="Nome utente" name="Utente" required></input><br>
+			<input id="AddUpd" type="submit" value="Nuovo prodotto"></input>
+		</form>
+	</div>
+	<div>
+		<table class="productTableClass">
+			<thead>
+				<tr><th>Prodotto</th><th>Note</th><th>Utente</th><th>Data</th><th>Modifica?</th><th>Elimina?</th></tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="product in prTab.productList">
+					<td>{{product.nome}}</td>
+					<td>{{product.note}}</td>
+					<td align="center">{{product.utente}}</td>
+					<td align="center">{{product.data | date:'dd/MM/yy HH:mm'}}</td>
+					<td align="center"><input type="submit" value="Modifica" ng-click="prTab.fill4update($index)"></input></td>
+					<td align="center"><input type="submit" value="Elimina" ng-click="prTab.delProdotto($index)"></input></td>
+				</tr>
+			</tbody>
+		</table><br>
+	</div>
+</div><br><br>
