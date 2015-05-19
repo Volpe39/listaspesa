@@ -2,7 +2,7 @@
 	<div class="formAddProdottoClass">
 		<form name="formAddProdotto" ng-submit="formAddProdotto.$valid && prTab.updORadd()" novalidate>
 			<input ng-model="prTab.newProdotto.nome" style="width:250px" type="text" placeholder="Nome prodotto" name="Prodotto" required></input><br>
-			<textarea ng-model="prTab.newProdotto.note" style="width:250px;height:200px;resize:none;" placeholder="Descrizione prodotto" name="Note" required></textarea><br>
+			<textarea ng-model="prTab.newProdotto.note" style="width:250px;height:200px;resize:none;" placeholder="Descrizione prodotto" name="Note"></textarea><br>
 			<input ng-model="prTab.newProdotto.utente" style="width:250px" type="text" placeholder="Nome utente" name="Utente" required></input><br>
 			<input id="AddUpd" type="submit" value="Nuovo prodotto"></input>
 		</form>
